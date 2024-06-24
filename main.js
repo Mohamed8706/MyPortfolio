@@ -28,7 +28,6 @@ const observer = new IntersectionObserver((enteries) => {
 });
 
 sections.forEach((el) => {
-    console.log(el)
     observer.observe(el) 
 
 })
