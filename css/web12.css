@@ -404,15 +404,14 @@ a i{
     }
 }
 section:not(#projects) * {
-    position: relative;
-    transform: translate(-100%);
+    transform: translateX(-100%);
     filter: blur(4px);
     transition: all 0.8s;
     opacity: 0;
 
 }
 .apparate {
-    transform: translate(0) !important;
+    transform: translateX(0) !important;
     filter: blur(0) !important;
     opacity: 1 !important;
 
