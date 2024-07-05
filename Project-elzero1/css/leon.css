@@ -516,4 +516,8 @@ html {
     .scroll {
         right: 60px;
     }
+    .about-content .image {
+       width: 250px;
+
+}
 }
