@@ -517,6 +517,12 @@ html {
         right: 60px;
     }
     .about-content .image {
+<<<<<<< HEAD
         width: 250px;
     }
+=======
+       width: 250px;
+
+}
+>>>>>>> 5aa01ca1825b7552b6c279b498a40b42a274334c
 }
