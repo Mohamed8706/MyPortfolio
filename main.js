@@ -1,6 +1,4 @@
 let scrollToTop = document.querySelector(".scroll");
-
-
 document.body.onscroll = function () {
     if (scrollY > 200) {
         scrollToTop.style.bottom = "20px"
@@ -14,14 +12,12 @@ scrollToTop.onclick = function() {
 }
 
 const sections = document.querySelectorAll("section:not(#projects) *");
-
-const observer = new IntersectionObserver((enteries) => {
-    enteries.forEach((entry) => {
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add("apparate");
-        }
-        else {
-            entry.target.classList.remove("apparate");
+            
+            observer.unobserve(entry.target);
         }
     })
 });
