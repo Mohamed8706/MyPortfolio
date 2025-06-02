@@ -21,9 +21,7 @@ const observer = new IntersectionObserver((enteries) => {
         if (entry.isIntersecting) {
             entry.target.classList.add("apparate");
         }
-        else {
-            entry.target.classList.remove("apparate");
-        }
+        observer.unobserve(entry.target);
     })
 });
 
