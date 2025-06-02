@@ -1,5 +1,4 @@
-let scrollToTop = document.querySelector(".scroll");More actions
-
+let scrollToTop = document.querySelector(".scroll");
 
 
 document.body.onscroll = function () {
